@@ -1,0 +1,19 @@
+
+<body>
+<table align="center" bgcolor="#99FF99" cellpadding="5" cellspacing="5">
+	<tr align="left">
+    <td><font size="+1" color="#000000" face="Comic Sans MS, cursive">Nak Kira Zakat? </font></td>
+    </tr>
+    <tr align="left">
+    <?php  
+	$sql="SELECT * FROM kirafidyah";
+	$rs = mysql_query($sql);
+	while($a = mysql_fetch_assoc($rs)) {?>
+    <tr align="left">
+    <td width="46" align="center"><a href="kira.php"><input type="submit" value="Teruskan"/></a></td> 
+     <?php } ?>
+    </tr>     
+    </table>
+ 
+</body>
+</html>
